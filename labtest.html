@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab Test Form</title>
+        <link rel="stylesheet" href="labtest_style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Lab Test Form</h1>
+        </header>
+        <div class="row">
+            <div class="column">
+                
+                <form action="">
+                    <article>
+                        <h2>Contact Details</h2>
+                        <div class="articleElement">
+                            <h3 class="requiredEntry">Full Name</h3>
+                            <input type="text" title="name" required spellcheck="false">
+                        </div>
+                        <div class="articleElement">
+                            <h3>Patient Id (if exists)</h3>
+                            <input type="number">
+                        </div>
+                        <div class="articleElement">
+                            <h3 class="requiredEntry">Contact Number</h3>
+                            <input type="number" min="1000000000" max="9999999999" required>
+                        </div>
+                        <div class="articleElement">
+                            <h3 class="requiredEntry">Email Address</h3>
+                            <input type="email" required>
+                        </div>
+                    </article>
+        
+                    <article>
+                        <h2>Address</h2>
+                        <div class="articleElement">
+                            <h3 class="requiredEntry">House Number</h3>
+                            <input type="text" required>
+                        </div>
+                        <div class="articleElement">
+                            <h3 class="requiredEntry">Street</h3>
+                            <input type="text" required>
+                        </div>
+                        <div class="articleElement">
+                            <h3 class="requiredEntry">Area</h3>
+                            <input type="text" required>
+                        </div>
+                        <div class="articleElement">
+                            <h3 class="requiredEntry">District</h3>
+                            <select name="District" id="district" required>
+                                <option value="">Choose</option>
+                                <option value="Bangalore Urban">Bangalore Urban</option>
+                                <option value="Bangalore Rural">Bangalore Rural</option>
+                            </select>
+                        </div>
+                        
+                    </article>
+                    
+                    <article>
+                        <h3 class="requiredEntry">Choose the Test Type</h3>
+                        <p>Check atleast one box without fail</p>
+                        <input type="checkbox" id="c1" name="option1" value="CBC">
+                        <label for="c1">CBC</label>
+                        <br>
+                        <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                        <label for="c2">Complete Urine</label>
+                        <br>
+                        <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                        <label for="c3">Lipid Profile</label>
+                        <br>
+                        <input type="checkbox" id="c4" name="option4" value="TSH">
+                        <label for="c4">Thyroid Stimulating Hormone(TSH)</label>
+                        <br>
+                        <input type="checkbox" id="c5" name="option5" value="Glucose Test">
+                        <label for="c5">Glucose Test</label>
+                    </article>
+        
+                    <article>
+                        <h3 class="requiredEntry">Do you want hard copy of the report?</h3>
+                        <input type="radio" id="c6" name="option" value="True" required>
+                        <label for="c6">Yes</label>
+                        <br>
+                        <input type="radio" id="c7" name="option" value="False">
+                        <label for="c7">No</label>
+                    </article>
+                    
+                    <article>
+                        <h3 class="requiredEntry">Select your comfortable date and time</h3>
+                        <h3>Date</h3>
+                        <input type="date" id="c8" name="date" value="date" required>
+                        <h3>Time</h3>
+                        <input type="time" id="c9" name="time" value="time" required>
+                    </article>
+                    <button>Reset</button>
+                    <button>Submit</button>
+                </form>
+                
+            </div>
+            <div class="column" id="rightSideSection">
+                <img src="./Images/Lab-Test/lab-test.jpg" alt="">
+            </div>
+        </div>
+        <footer>
+            @Copyright. Only for demonstration purposes
+        </footer>
+    </body>
+</html>

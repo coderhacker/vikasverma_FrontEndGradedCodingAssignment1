@@ -1,0 +1,124 @@
+body{
+    height: auto;
+    margin:0%;
+}
+
+header{
+    background-color: gray;
+    color: white;
+    font-size: large;
+    text-align: right;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: small;
+    text-align: right;
+    padding: 10px;
+}
+
+p, h1{
+    padding: 10px;
+    margin: 0%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+article{
+    min-width: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid steelblue;
+    background-color: white;
+}
+
+input{
+    width: 250px;
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    height: 30px;
+}
+
+input, label, h3, #district{
+    font-size: 16px;
+}
+
+button{
+    display: inline-block;
+    margin: 20px;
+    width: 80px;
+    border-radius: 4px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(175, 102, 243);
+}
+
+button:hover{
+    transform: scale(1.1);
+    
+}
+
+#district{
+    height: 30px;
+}
+header p{
+    text-align: left;
+}
+article h3{
+    font-family: Helvetica ;
+    letter-spacing: 2px;
+}
+
+input:focus{
+    outline: none !important;
+    border: none;
+    border-bottom:1px solid black;
+}
+header p::first-line{
+    font-weight: bold;
+    color: rgb(76, 0, 255);
+}
+.requiredEntry::after{
+    content: "*";
+    color: red;
+}
+
+input[name^="option"]{
+    width: 20px;
+    height: 20px;
+}
+
+#rightSideSection{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+img{
+    display: block;
+    margin-top: 0%;
+    margin-left: auto;
+}
+
+.articleElement{
+    width: 40%;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
